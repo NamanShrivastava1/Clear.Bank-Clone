@@ -1,0 +1,82 @@
+@font-face {
+    font-family: clear1;
+    src: url(./Fonts/ClearSansDisplayRegular.woff2);
+}
+@font-face {
+    font-family: clear2;
+    src: url(./Fonts/ClearSansTextBold.woff2);
+}
+@font-face {
+    font-family: clear3;
+    src: url(./Fonts/ClearSansTextRegular.woff2);
+}
+*{
+    font-family: clear1;
+}
+
+#blur{
+    background-color: rgba(255, 255, 255, 0.122);
+    backdrop-filter: blur(20px);
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.122);
+    backdrop-filter: blur(15px);
+}
+#parent-scroll{
+    /* background-color: lightblue; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+#child-scroll{
+    padding-left: 150px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 150px;
+    /* background-color: lightseagreen; */
+}
+#products i{
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+#heroines:hover i{
+    opacity: 1;
+}
+#heroines:hover h1{
+    transition: all ease 0.2s;
+    color: black;
+}
+#red{
+    background: linear-gradient(rgb(222, 26, 101),rgb(246, 106, 160));
+    font-weight: 500;
+    background-clip: text;
+    color: transparent;
+}
+#exploreBtn{
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.swiper{
+    width: 100%;
+    height: 60%;
+}
+.swiper-slide{
+    border: 1px solid #b0adada5;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.swiper-slide:hover{
+    background-color: #70F1DA;
+}
+.swiper-slide:hover #learnBtn{
+    background-color: #fff;
+    border: none;
+}
